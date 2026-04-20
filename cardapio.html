@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sans Sabores — Cardápio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #fce4ec;
+      font-family: 'Nunito', sans-serif;
+      color: #2c1a1a;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 32px;
+    }
+
+    .brand-small {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #a05070;
+      margin-bottom: 4px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(52px, 14vw, 88px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #2c1a1a;
+      line-height: 1;
+    }
+
+    .divider {
+      width: 80%;
+      max-width: 600px;
+      margin: 16px auto 0;
+      border: none;
+      border-top: 1.5px solid #d48090;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 8px 20px 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    @media (max-width: 560px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    .section {
+      background: rgba(255,255,255,0.45);
+      border-radius: 18px;
+      padding: 24px 22px;
+      backdrop-filter: blur(4px);
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #2c1a1a;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid #f0b8c8;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 13px;
+      gap: 12px;
+    }
+
+    .item:last-child { margin-bottom: 0; }
+
+    .item-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #3d1f2e;
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .item-name em {
+      font-style: normal;
+      font-weight: 400;
+      color: #7a4058;
+    }
+
+    .item-price {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2c1a1a;
+      white-space: nowrap;
+      padding: 2px 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px 48px;
+      border-top: 1.5px solid #d48090;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #a05070;
+      font-weight: bold;
+    }
+
+    .footer-tagline {
+      margin-top: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #2c1a1a;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="brand-small">Sans Sabores</p>
+    <h1>MENU</h1>
+    <hr class="divider" />
+  </header>
+
+  <main>
+    <div class="grid">
+
+      <div class="section">
+        <h2>Doces Tradicionais</h2>
+        <div class="item">
+          <span class="item-name">Pudim de leite condensado</span>
+          <span class="item-price">R$9</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Cone trufado</span>
+          <span class="item-price">R$14</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Brigadeiro no pote tradicional, maracujá <em>ou</em> pistache</span>
+          <span class="item-price">R$16</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Brownie</span>
+          <span class="item-price">R$14</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Doces com Frutas</h2>
+        <div class="item">
+          <span class="item-name">Surpresinha de ninho com uva</span>
+          <span class="item-price">R$23</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Surpresinha de ninho com morango</span>
+          <span class="item-price">R$24</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Surpresinha de ninho 'Moranguva'</span>
+          <span class="item-price">R$32</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Bombom de morango <em>ou</em> uva</span>
+          <span class="item-price">R$18</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Bolos</h2>
+        <div class="item">
+          <span class="item-name">Brigadeiro</span>
+          <span class="item-price">R$24</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Ninho com morango</span>
+          <span class="item-price">R$24</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Matilda</span>
+          <span class="item-price">R$32</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Crunch</span>
+          <span class="item-price">R$34</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Doces 'Japoneses'</h2>
+        <div class="item">
+          <span class="item-name">Cookie de Matchá com Mochi</span>
+          <span class="item-price">R$14</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Bombom de Abelhinha</span>
+          <span class="item-price">R$20</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Torta de Chocolate com Caramelo de Missô</span>
+          <span class="item-price">R$22</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Panacota de Gatinho com Geleia de Frutas Vermelhas</span>
+          <span class="item-price">R$18</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Cafés</h2>
+        <div class="item">
+          <span class="item-name">Espresso (50ml)</span>
+          <span class="item-price">R$8</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Cappuccino (180ml)</span>
+          <span class="item-price">R$15</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Café au Lait (240ml)</span>
+          <span class="item-price">R$15</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Bebidas</h2>
+        <div class="item">
+          <span class="item-name">Água</span>
+          <span class="item-price">R$6</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Refrigerantes</span>
+          <span class="item-price">R$9</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Suco de latinha</span>
+          <span class="item-price">R$9</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-logo">Sans Sabores</p>
+    <p>doces de mãe feitos com <i class="fa-solid fa-heart">♥</i> amor para adoçar o seu dia!</p>
+  </footer>
+
+</body>
+</html>
